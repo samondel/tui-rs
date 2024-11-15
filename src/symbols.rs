@@ -98,50 +98,61 @@ pub mod line {
     pub const VERTICAL: &str = "│";
     pub const DOUBLE_VERTICAL: &str = "║";
     pub const THICK_VERTICAL: &str = "┃";
+    pub const ASCII_VERTICAL: &str = "|";
 
     pub const HORIZONTAL: &str = "─";
     pub const DOUBLE_HORIZONTAL: &str = "═";
     pub const THICK_HORIZONTAL: &str = "━";
+    pub const ASCII_HORIZONTAL: &str = "-";
 
     pub const TOP_RIGHT: &str = "┐";
     pub const ROUNDED_TOP_RIGHT: &str = "╮";
     pub const DOUBLE_TOP_RIGHT: &str = "╗";
     pub const THICK_TOP_RIGHT: &str = "┓";
+    pub const ASCII_TOP_RIGHT: &str = "+";
 
     pub const TOP_LEFT: &str = "┌";
     pub const ROUNDED_TOP_LEFT: &str = "╭";
     pub const DOUBLE_TOP_LEFT: &str = "╔";
     pub const THICK_TOP_LEFT: &str = "┏";
+    pub const ASCII_TOP_LEFT: &str = "+";
 
     pub const BOTTOM_RIGHT: &str = "┘";
     pub const ROUNDED_BOTTOM_RIGHT: &str = "╯";
     pub const DOUBLE_BOTTOM_RIGHT: &str = "╝";
     pub const THICK_BOTTOM_RIGHT: &str = "┛";
+    pub const ASCII_BOTTOM_RIGHT: &str = "+";
 
     pub const BOTTOM_LEFT: &str = "└";
     pub const ROUNDED_BOTTOM_LEFT: &str = "╰";
     pub const DOUBLE_BOTTOM_LEFT: &str = "╚";
     pub const THICK_BOTTOM_LEFT: &str = "┗";
+    pub const ASCII_BOTTOM_LEFT: &str = "+";
 
     pub const VERTICAL_LEFT: &str = "┤";
     pub const DOUBLE_VERTICAL_LEFT: &str = "╣";
     pub const THICK_VERTICAL_LEFT: &str = "┫";
+    pub const ASCII_VERTICAL_LEFT: &str = "|";
 
     pub const VERTICAL_RIGHT: &str = "├";
     pub const DOUBLE_VERTICAL_RIGHT: &str = "╠";
     pub const THICK_VERTICAL_RIGHT: &str = "┣";
+    pub const ASCII_VERTICAL_RIGHT: &str = "|";
 
     pub const HORIZONTAL_DOWN: &str = "┬";
     pub const DOUBLE_HORIZONTAL_DOWN: &str = "╦";
     pub const THICK_HORIZONTAL_DOWN: &str = "┳";
+    pub const ASCII_HORIZONTAL_DOWN: &str = "-";
 
     pub const HORIZONTAL_UP: &str = "┴";
     pub const DOUBLE_HORIZONTAL_UP: &str = "╩";
     pub const THICK_HORIZONTAL_UP: &str = "┻";
+    pub const ASCII_HORIZONTAL_UP: &str = "-";
 
     pub const CROSS: &str = "┼";
     pub const DOUBLE_CROSS: &str = "╬";
     pub const THICK_CROSS: &str = "╋";
+    pub const ASCII_CROSS: &str = "+";
 
     #[derive(Debug, Clone)]
     pub struct Set {
@@ -206,6 +217,20 @@ pub mod line {
         horizontal_down: THICK_HORIZONTAL_DOWN,
         horizontal_up: THICK_HORIZONTAL_UP,
         cross: THICK_CROSS,
+    };
+    
+    pub const ASCII: Set = Set {
+        vertical: ASCII_VERTICAL,
+        horizontal: ASCII_HORIZONTAL,
+        top_right: ASCII_TOP_RIGHT,
+        top_left: ASCII_TOP_LEFT,
+        bottom_right: ASCII_BOTTOM_RIGHT,
+        bottom_left: ASCII_BOTTOM_LEFT,
+        vertical_left: ASCII_VERTICAL_LEFT,
+        vertical_right: ASCII_VERTICAL_RIGHT,
+        horizontal_down: ASCII_HORIZONTAL_DOWN,
+        horizontal_up: ASCII_HORIZONTAL_UP,
+        cross: ASCII_CROSS,
     };
 }
 

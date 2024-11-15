@@ -13,6 +13,7 @@ pub enum BorderType {
     Rounded,
     Double,
     Thick,
+    ASCII,
 }
 
 impl BorderType {
@@ -22,6 +23,7 @@ impl BorderType {
             BorderType::Rounded => line::ROUNDED,
             BorderType::Double => line::DOUBLE,
             BorderType::Thick => line::THICK,
+            BorderType::ASCII => line::ASCII,
         }
     }
 }
